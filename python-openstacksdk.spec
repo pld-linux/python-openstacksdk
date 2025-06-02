@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	doc	# build doc (missing dep)
+%bcond_with	doc	# build doc (missing dep)
 %bcond_with	tests	# unit tests (incomplete dependencies)
 %bcond_without	python2 # CPython 2.x module
 %bcond_with	python3 # CPython 3.x module
@@ -10,7 +10,7 @@ Summary(pl.UTF-8):	SDK do budowania aplikacji działających z OpenStack
 Name:		python-openstacksdk
 # keep 0.39.x here for python2 support
 Version:	0.39.0
-Release:	4
+Release:	5
 License:	Apache v2.0
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/o/openstacksdk/openstacksdk-%{version}.tar.gz
